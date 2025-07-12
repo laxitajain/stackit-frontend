@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         //F4EDDD */}
         <Header />
         <div className="flex-1 mt-14 px-2 pt-20 py-6 grid mb-4">
-          <main className="max-w-7xl px-16  mx-auto w-full">{children}</main>
+          <main className="max-w-7xl px-  mx-auto w-full">{children}</main>
         </div>
         <Footer />
       </body>

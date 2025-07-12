@@ -8,7 +8,7 @@ export default function Navigation() {
       <ul className="flex gap-16 items-center">
         {navLinks.map((link) => (
           <li
-            className="h-10 px-0.5 py-2 font-medium transition-colors cursor-pointer hidden sm:block"
+            className="h-10 px-0.5 py-2 font-bold transition-colors cursor-pointer hidden sm:block"
             key={link.to}
           >
             <Link href={link.to}>{link.label}</Link>
