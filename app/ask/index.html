@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask a Question</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ask a Question</h1>
+    <p class="subheading">Get help by asking a clear and specific question.</p>
+
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="Enter your question title" />
+
+    <label for="description">Description</label>
+    <textarea id="description" placeholder="Provide detailed context..."></textarea>
+
+    <label for="tags">Tags</label>
+    <div class="tags-input" id="tagBox">
+      <input type="text" id="tagInput" placeholder="Add a tag and press Enter" />
+    </div>
+    <div class="hint">Add up to 5 tags</div>
+
+    <div class="button-group">
+      <button class="button cancel" onclick="resetForm()">Cancel</button>
+      <button class="button post" onclick="submitForm()">Post Question</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

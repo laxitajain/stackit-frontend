@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Question Detail</title>
+  <link rel="stylesheet" href="detail.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="question-title">How to center a div using CSS?</h1>
+    <div class="meta">
+      <span class="author">Asked by: John Doe</span>
+      <span class="date">| July 12, 2025</span>
+    </div>
+    <div class="tags">
+      <span class="tag">css</span>
+      <span class="tag">html</span>
+      <span class="tag">frontend</span>
+    </div>
+    <p class="description" id="question-desc">
+      I’ve been trying to center a div both vertically and horizontally inside a parent container. I’ve tried margin auto, flexbox, and grid, but nothing seems to work the same across all browsers. What is the most reliable way to do it?
+    </p>
+
+    <hr class="divider" />
+
+    <h2>Answers</h2>
+
+    <div class="answer">
+      <p>You can use Flexbox:</p>
+      <pre><code>display: flex;
+justify-content: center;
+align-items: center;</code></pre>
+      <span class="answered-by">Answered by Jane Smith</span>
+    </div>
+
+    <div class="answer">
+      <p>Grid is also very clean:</p>
+      <pre><code>display: grid;
+place-items: center;</code></pre>
+      <span class="answered-by">Answered by Alex Lee</span>
+    </div>
+
+    <div class="answer-box">
+      <label for="newAnswer">Your Answer</label>
+      <textarea id="newAnswer" placeholder="Type your answer..."></textarea>
+      <button class="button post" onclick="postAnswer()">Post Answer</button>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>
